@@ -40,7 +40,7 @@ One command installs PM Brain + all 9 PM Skills plugins:
 
 ```bash
 # Add the marketplace
-claude plugin marketplace add yourusername/pm-os
+claude plugin marketplace add brainly-io/pm-os
 
 # Install everything
 claude plugin install pm-all@pm-os
@@ -57,7 +57,7 @@ Install only what you need:
 
 ```bash
 # Add the marketplace
-claude plugin marketplace add yourusername/pm-os
+claude plugin marketplace add brainly-io/pm-os
 
 # Install PM Brain
 claude skill install pm-brain@pm-os
@@ -72,7 +72,7 @@ claude plugin install pm-product-strategy@pm-os
 ### Option C: Quick Install Script
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/yourusername/pm-os/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/brainly-io/pm-os/main/install.sh | bash
 ```
 
 ## Quick Start
@@ -313,17 +313,6 @@ pm-os/
 - Skills work (manual reference)
 - Commands don't work as `/slash-commands` (describe workflows instead)
 - Hooks don't auto-run (manual validation)
-
-## Credits
-
-This repository unifies two open-source projects:
-
-- **[PM Brain](https://github.com/phuryn/pm-brain)** by [Paweł Huryn](https://www.productcompass.pm)
-- **[PM Skills](https://github.com/phuryn/pm-skills)** by [Paweł Huryn](https://www.productcompass.pm)
-
-Both projects are MIT licensed. This unified distribution makes installation easier while preserving full functionality of both systems.
-
-PM Skills framework selection based on work by Teresa Torres, Marty Cagan, Alberto Savoia, Dan Olsen, Roger L. Martin, Ash Maurya, Christina Wodtke, Anthony Ulwick, and others.
 
 ## Contributing
 
