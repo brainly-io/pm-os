@@ -1,0 +1,13 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "pm-os",
+  "version": "1.0.0",
+  "description": "Complete PM Operating System: Memory layer (PM Brain) + 68 skills and 42 workflows (PM Skills)",
+  "owner": {
+    "name": "brainly-io",
+    "email": "engg@brainally.io",
+    "url": "https://github.com/brainly-io/pm-os"
+  },
+  "skills": [],
+  "plugins": []
+}
