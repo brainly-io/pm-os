@@ -1,0 +1,30 @@
+{
+  "name": "pm-all",
+  "version": "1.0.0",
+  "description": "Complete PM OS: PM Brain + all 9 PM Skills plugins in one install",
+  "author": {
+    "name": "Brainly IO",
+    "email": "contact@brainly.io",
+    "url": "https://github.com/brainly-io/pm-os"
+  },
+  "keywords": [
+    "product-management",
+    "pm-brain",
+    "pm-skills",
+    "bundle",
+    "complete"
+  ],
+  "dependencies": [
+    "pm-brain",
+    "pm-product-discovery",
+    "pm-product-strategy",
+    "pm-execution",
+    "pm-market-research",
+    "pm-data-analytics",
+    "pm-go-to-market",
+    "pm-marketing-growth",
+    "pm-toolkit",
+    "pm-ai-shipping"
+  ],
+  "license": "MIT"
+}
