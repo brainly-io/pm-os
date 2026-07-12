@@ -4,10 +4,79 @@
   "version": "1.0.0",
   "description": "Complete PM Operating System: Memory layer (PM Brain) + 68 skills and 42 workflows (PM Skills)",
   "owner": {
-    "name": "brainly-io",
-    "email": "engg@brainally.io",
+    "name": "Brainly IO",
+    "email": "contact@brainly.io",
     "url": "https://github.com/brainly-io/pm-os"
   },
-  "skills": [],
-  "plugins": []
+  "skills": [
+    {
+      "name": "pm-brain",
+      "description": "Initialize a PM Brain - markdown-native second brain for product operators",
+      "source": "./pm-brain-skill",
+      "category": "product-management"
+    }
+  ],
+  "plugins": [
+    {
+      "name": "pm-all",
+      "description": "🎯 Install everything: PM Brain + all 9 PM Skills plugins",
+      "source": "./plugins/pm-all",
+      "category": "product-management",
+      "featured": true
+    },
+    {
+      "name": "pm-product-discovery",
+      "description": "Product discovery: ideation, experiments, assumption testing, OSTs, interviews",
+      "source": "./plugins/pm-product-discovery",
+      "category": "product-management"
+    },
+    {
+      "name": "pm-product-strategy",
+      "description": "Product strategy: vision, business models, competitive analysis",
+      "source": "./plugins/pm-product-strategy",
+      "category": "product-management"
+    },
+    {
+      "name": "pm-execution",
+      "description": "Execution: PRDs, OKRs, roadmaps, sprints, pre-mortems",
+      "source": "./plugins/pm-execution",
+      "category": "product-management"
+    },
+    {
+      "name": "pm-market-research",
+      "description": "Market research: personas, segmentation, journey maps",
+      "source": "./plugins/pm-market-research",
+      "category": "product-management"
+    },
+    {
+      "name": "pm-data-analytics",
+      "description": "Data analytics: SQL, cohort analysis, A/B testing",
+      "source": "./plugins/pm-data-analytics",
+      "category": "product-management"
+    },
+    {
+      "name": "pm-go-to-market",
+      "description": "Go-to-market: GTM strategy, growth loops, ICPs",
+      "source": "./plugins/pm-go-to-market",
+      "category": "product-management"
+    },
+    {
+      "name": "pm-marketing-growth",
+      "description": "Marketing & growth: positioning, North Star metrics",
+      "source": "./plugins/pm-marketing-growth",
+      "category": "product-management"
+    },
+    {
+      "name": "pm-toolkit",
+      "description": "PM utilities: resume review, legal docs, proofreading",
+      "source": "./plugins/pm-toolkit",
+      "category": "product-management"
+    },
+    {
+      "name": "pm-ai-shipping",
+      "description": "AI Shipping Kit: document and audit AI-built code",
+      "source": "./plugins/pm-ai-shipping",
+      "category": "product-management"
+    }
+  ]
 }
