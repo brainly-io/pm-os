@@ -3,9 +3,9 @@
   "version": "2.1.0",
   "description": "PM utility skills: resume review, NDA drafting, privacy policy generation, and grammar/flow checking. Essential tools for product managers beyond core product work.",
   "author": {
-    "name": "Paweł Huryn",
-    "email": "pawel@productcompass.pm",
-    "url": "https://www.productcompass.pm"
+    "name": "Brainly IO",
+    "email": "contact@brainly.io",
+    "url": "https://github.com/brainly-io/pm-os"
   },
   "keywords": [
     "product-management",

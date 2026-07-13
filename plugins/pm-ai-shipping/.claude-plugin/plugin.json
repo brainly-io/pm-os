@@ -1,11 +1,11 @@
 {
   "name": "pm-ai-shipping",
   "version": "2.1.0",
-  "description": "AI Shipping Kit — for PMs and founders accountable for AI-built code. Document a vibe-coded app, audit it for intended-vs-implemented security gaps and performance issues, and produce a reviewer-ready shipping packet.",
+  "description": "AI Shipping Kit \u2014 for PMs and founders accountable for AI-built code. Document a vibe-coded app, audit it for intended-vs-implemented security gaps and performance issues, and produce a reviewer-ready shipping packet.",
   "author": {
-    "name": "Paweł Huryn",
-    "email": "pawel@productcompass.pm",
-    "url": "https://www.productcompass.pm"
+    "name": "Brainly IO",
+    "email": "contact@brainly.io",
+    "url": "https://github.com/brainly-io/pm-os"
   },
   "keywords": [
     "product-management",
