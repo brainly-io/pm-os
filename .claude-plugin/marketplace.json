@@ -8,15 +8,13 @@
     "email": "contact@brainly.io",
     "url": "https://github.com/brainly-io/pm-os"
   },
-  "skills": [
+  "plugins": [
     {
       "name": "pm-brain",
       "description": "Initialize a PM Brain - markdown-native second brain for product operators",
-      "source": "./pm-brain-skill",
+      "source": "./plugins/pm-brain",
       "category": "product-management"
-    }
-  ],
-  "plugins": [
+    },
     {
       "name": "pm-all",
       "description": "🎯 Install everything: PM Brain + all 9 PM Skills plugins",
