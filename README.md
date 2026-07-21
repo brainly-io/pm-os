@@ -34,6 +34,26 @@ Structured AI workflows encoding proven PM frameworks from industry experts (Ter
 
 ## Installation
 
+### 🚀 Interactive Install (Easiest)
+
+**Paste this prompt into Claude Desktop and let Claude handle everything:**
+
+```
+Help me install PM-OS. IMPORTANT: PM Skills need PM Brain to work - without PM Brain, PM Skills are useless.
+
+Check if brainly-io/pm-os marketplace is added (if not: claude plugin marketplace add brainly-io/pm-os), then ask: A) Install everything (pm-all), B) Only PM Brain, or C) Choose specific plugins.
+
+For Option C: If PM Brain isn't installed, recommend installing it first and explain why. Then show all 9 PM Skills plugins with use cases and commands, let me select which ones.
+
+Run install commands based on my choice and guide next steps.
+```
+
+Claude will guide you through the installation interactively. [See full interactive guide](docs/interactive-install.md)
+
+---
+
+### Manual Installation
+
 ### Option A: Install Everything (Recommended)
 
 One command installs PM Brain + all 9 PM Skills plugins:
