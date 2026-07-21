@@ -1,0 +1,18 @@
+{
+  "name": "pm-brain",
+  "version": "1.0.0",
+  "description": "Initialize and manage your PM Brain - a markdown-native second brain for product operators",
+  "author": {
+    "name": "Brainly IO",
+    "email": "contact@brainly.io",
+    "url": "https://github.com/brainly-io/pm-os"
+  },
+  "keywords": [
+    "product-management",
+    "second-brain",
+    "knowledge-management",
+    "markdown",
+    "memory"
+  ],
+  "license": "MIT"
+}
