@@ -45,10 +45,16 @@ Check if brainly-io/pm-os marketplace is added (if not: claude plugin marketplac
 
 For Option C: If PM Brain isn't installed, recommend installing it first and explain why. Then show all 9 PM Skills plugins with use cases and commands, let me select which ones.
 
-Run install commands based on my choice and guide next steps.
+After installation:
+1. List all installed commands
+2. If PM Brain installed: "Create empty dir → Open in Claude Desktop Code tab → Run /pm-brain → Answer 5 question batches → Get 6 commands (/ingest, /prep, /review, /ideate, /risk, /plan) → Use daily: /ingest after meetings, /prep before 1:1s, /review Fridays"
+3. If PM Skills without PM Brain: Warn that they need brain context, recommend installing PM Brain
+4. Give usage examples
+
+Run install commands and guide me through setup.
 ```
 
-Claude will guide you through the installation interactively. [See full interactive guide](docs/interactive-install.md)
+Claude will guide you through the installation interactively. [See full interactive guide](INSTALL.md)
 
 ---
 

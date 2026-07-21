@@ -1,132 +1,277 @@
-# PM-OS Interactive Installation
+# Interactive Installation Guide
 
-Copy and paste this entire prompt into Claude Desktop to install PM-OS interactively:
+## One-Prompt Installation
+
+Instead of following manual installation steps, you can paste this single prompt into Claude Desktop and let Claude handle everything:
 
 ---
 
-## Installation Prompt (Copy Everything Below)
+### 🚀 Copy & Paste This Prompt:
 
 ```
-I want to install PM-OS (PM Brain + PM Skills). Please help me with an interactive installation.
+Help me install PM-OS (Product Management Operating System).
+
+Context: PM-OS provides PM Brain (memory layer) and PM Skills (68 skills, 42 workflows) for product managers.
 
 IMPORTANT: PM Skills require PM Brain to be installed and set up. Without PM Brain, PM Skills are useless as they need the brain's context to work effectively.
 
-**Your task:**
-1. Check if I have the brainly-io/pm-os marketplace added
-2. If not, run: `claude plugin marketplace add brainly-io/pm-os`
-3. Ask me which installation option I prefer:
-   - Option A: Install everything (PM Brain + all 9 PM Skills plugins) - Recommended
-   - Option B: Install only PM Brain
-   - Option C: Install PM Brain + specific plugins I choose
-4. For Option C:
-   - If PM Brain isn't installed, STRONGLY RECOMMEND installing it first (explain why)
-   - Show all 9 PM Skills plugins with use cases and commands
-   - Let me select which ones I want
-5. Based on my choice, run the appropriate installation commands
-6. After installation, explain what I got and what commands are available
-7. Guide me on next steps (how to initialize my first brain if PM Brain is installed)
+Your tasks:
+1. Check if the brainly-io/pm-os marketplace is added. If not, add it with: claude plugin marketplace add brainly-io/pm-os
 
-**Installation commands you'll use:**
-- For everything: `claude plugin install pm-all@pm-os`
-- For PM Brain only: `claude plugin install pm-brain@pm-os`
-- For specific plugins: `claude plugin install [plugin-name]@pm-os`
+2. Ask me which installation I want:
+   A) Everything (PM Brain + all 9 PM Skills plugins) - Recommended for most users
+   B) Only PM Brain (memory system only, no workflows)
+   C) Custom (I'll choose specific plugins)
 
-**Available PM Skills plugins (9 total - only show these for Option C):**
+3. For Option C:
+   - If I haven't installed PM Brain yet, STRONGLY RECOMMEND installing it first (explain why PM Skills need PM Brain)
+   - Show me these 9 PM Skills plugins with their use cases:
+     
+     * pm-product-discovery (13 skills, 5 commands)
+       Use case: Run discovery cycles, design experiments, conduct user interviews, validate assumptions
+       Commands: /discover, /brainstorm, /triage-requests, /interview, /setup-metrics
+     
+     * pm-product-strategy (12 skills, 5 commands)
+       Use case: Build product strategy, define vision, analyze competition, create business models
+       Commands: /strategy, /business-model, /value-proposition, /market-scan, /pricing
+     
+     * pm-execution (16 skills, 11 commands)
+       Use case: Write PRDs, plan OKRs, manage roadmaps, run sprints, conduct pre-mortems
+       Commands: /write-prd, /plan-okrs, /transform-roadmap, /sprint, /pre-mortem, /red-team-prd, /meeting-notes, /stakeholder-map, /write-stories, /test-scenarios, /generate-data
+     
+     * pm-market-research (7 skills, 3 commands)
+       Use case: Create personas, segment users, map journeys, analyze competitors
+       Commands: /research-users, /competitive-analysis, /analyze-feedback
+     
+     * pm-data-analytics (3 skills, 3 commands)
+       Use case: Write SQL queries, analyze cohorts, evaluate A/B tests
+       Commands: /write-query, /analyze-cohorts, /analyze-test
+     
+     * pm-go-to-market (6 skills, 3 commands)
+       Use case: Plan product launches, design growth strategies, create competitive battlecards
+       Commands: /plan-launch, /growth-strategy, /battlecard
+     
+     * pm-marketing-growth (5 skills, 2 commands)
+       Use case: Define positioning, create marketing campaigns, establish North Star metrics
+       Commands: /market-product, /north-star
+     
+     * pm-toolkit (4 skills, 5 commands)
+       Use case: Review resumes, draft legal docs, proofread content
+       Commands: /review-resume, /tailor-resume, /draft-nda, /privacy-policy, /proofread
+     
+     * pm-ai-shipping (2 skills, 5 commands)
+       Use case: Document AI-generated code, run security/performance audits
+       Commands: /ship-check, /document-app, /derive-tests, /security-audit-static, /performance-audit-static
+   
+   - Let me select which ones I want (I can choose multiple)
 
-1. pm-product-discovery (13 skills, 5 commands)
-   - Use case: Run discovery cycles, design experiments, conduct user interviews, validate assumptions
-   - Commands: /discover, /brainstorm, /triage-requests, /interview, /setup-metrics
+4. Run the installation commands based on my choice
 
-2. pm-product-strategy (12 skills, 5 commands)
-   - Use case: Build product strategy, define vision, analyze competition, create business models
-   - Commands: /strategy, /business-model, /value-proposition, /market-scan, /pricing
+5. After installation, provide detailed next steps:
 
-3. pm-execution (16 skills, 11 commands)
-   - Use case: Write PRDs, plan OKRs, manage roadmaps, run sprints, conduct pre-mortems
-   - Commands: /write-prd, /plan-okrs, /transform-roadmap, /sprint, /pre-mortem, /red-team-prd, /meeting-notes, /stakeholder-map, /write-stories, /test-scenarios, /generate-data
+   a) List all installed commands based on what was installed:
+      - If pm-brain installed: /pm-brain
+      - If pm-product-discovery: /discover, /brainstorm, /triage-requests, /interview, /setup-metrics
+      - If pm-product-strategy: /strategy, /business-model, /value-proposition, /market-scan, /pricing
+      - If pm-execution: /write-prd, /plan-okrs, /transform-roadmap, /sprint, /pre-mortem, /red-team-prd, /meeting-notes, /stakeholder-map, /write-stories, /test-scenarios, /generate-data
+      - If pm-market-research: /research-users, /competitive-analysis, /analyze-feedback
+      - If pm-data-analytics: /write-query, /analyze-cohorts, /analyze-test
+      - If pm-go-to-market: /plan-launch, /growth-strategy, /battlecard
+      - If pm-marketing-growth: /market-product, /north-star
+      - If pm-toolkit: /review-resume, /tailor-resume, /draft-nda, /privacy-policy, /proofread
+      - If pm-ai-shipping: /ship-check, /document-app, /derive-tests, /security-audit-static, /performance-audit-static
 
-4. pm-market-research (7 skills, 3 commands)
-   - Use case: Create personas, segment users, map journeys, analyze competitors
-   - Commands: /research-users, /competitive-analysis, /analyze-feedback
+   b) If PM Brain was installed, provide these EXACT setup steps:
+      
+      "NEXT STEPS TO SET UP YOUR PM BRAIN:
+      
+      1. Create a directory for your product brain:
+         - Use ONE directory per product (don't mix multiple products)
+         - Example: mkdir ~/my-product-brain
+         - Or create it through your file explorer
+      
+      2. Open that directory in Claude Desktop:
+         - Click the 'Code' tab in Claude Desktop
+         - Click 'Add Folder' or 'Open Folder'
+         - Select your brain directory (the empty folder you just created)
+      
+      3. Initialize your brain by running: /pm-brain
+         - I will ask you 5 batches of questions about:
+           * Batch 1: Your product and the problem it solves
+           * Batch 2: Your team and stakeholders
+           * Batch 3: Your strategy and goals
+           * Batch 4: Your users and market
+           * Batch 5: Your processes and tools
+      
+      4. After initialization completes:
+         - Your brain folder will have the complete structure (knowledge/, hypotheses/, decisions/, stakeholders/, etc.)
+         - You'll have 6 additional commands available in that brain folder:
+           /ingest - Feed meetings, interviews, docs into your brain
+           /prep - Brief yourself before meetings with stakeholders
+           /review - Weekly maintenance sweep (run every Friday)
+           /ideate - Evidence-based solution synthesis
+           /risk - Five-area risk assessment
+           /plan - Six-block execution plan
+      
+      5. Daily usage:
+         - After meetings: /ingest [paste your meeting notes]
+         - Before 1:1s: /prep [stakeholder name]
+         - Every Friday: /review
+      
+      6. If PM Skills are also installed:
+         - Commands like /discover, /write-prd, /strategy will now use your brain's context automatically
+         - Your brain provides the memory, PM Skills provide the workflows
+         - Example: Run /write-prd and it will pull context from your knowledge/ folder"
+   
+   c) If PM Skills were installed WITHOUT PM Brain, show this warning:
+      
+      "⚠️ WARNING: You installed PM Skills without PM Brain.
+      
+      PM Skills work best with PM Brain because they need product context. Without the brain:
+      - Commands like /write-prd won't have your product's context
+      - You'll need to provide all context manually each time
+      - No memory across sessions
+      
+      STRONG RECOMMENDATION: Install PM Brain to get full value:
+      - Run: claude plugin install pm-brain@pm-os
+      - Then follow the brain setup steps above
+      
+      You can still use PM Skills now, but you'll be providing context each time instead of building on accumulated knowledge."
 
-5. pm-data-analytics (3 skills, 3 commands)
-   - Use case: Write SQL queries, analyze cohorts, evaluate A/B tests
-   - Commands: /write-query, /analyze-cohorts, /analyze-test
+   d) Provide 2-3 usage examples for the most common commands based on what was installed
 
-6. pm-go-to-market (6 skills, 3 commands)
-   - Use case: Plan product launches, design growth strategies, create competitive battlecards
-   - Commands: /plan-launch, /growth-strategy, /battlecard
+Installation commands:
+- For everything: claude plugin install pm-all@pm-os
+- For PM Brain only: claude plugin install pm-brain@pm-os
+- For specific plugins: claude plugin install [plugin-name]@pm-os
 
-7. pm-marketing-growth (5 skills, 2 commands)
-   - Use case: Define positioning, create marketing campaigns, establish North Star metrics
-   - Commands: /market-product, /north-star
-
-8. pm-toolkit (4 skills, 5 commands)
-   - Use case: Review resumes, draft legal docs, proofread content
-   - Commands: /review-resume, /tailor-resume, /draft-nda, /privacy-policy, /proofread
-
-9. pm-ai-shipping (2 skills, 5 commands)
-   - Use case: Document AI-generated code, run security/performance audits
-   - Commands: /ship-check, /document-app, /derive-tests, /security-audit-static, /performance-audit-static
-
-Start by checking the marketplace and asking me which option I want.
+Start by checking the marketplace status.
 ```
 
 ---
 
-## What This Does
+## What Happens Next
 
-When you paste this prompt into Claude Desktop, Claude will:
+Claude will:
 
-1. **Check marketplace status**
-   - Runs `claude plugin marketplace list` to see if brainly-io/pm-os is added
-   - If not, adds it automatically
-
-2. **Present options interactively**
-   - Asks which installation option you prefer
-   - Explains what each option includes
-
-3. **Run installation commands**
-   - Based on your choice, executes the appropriate `claude plugin install` commands
-   - Shows progress and confirms installation
-
-4. **Explain what you got**
-   - Lists all installed commands
-   - Shows what's available to use
-
-5. **Guide next steps**
-   - How to initialize your first brain
-   - Where to create the brain directory
-   - What to do after initialization
-
-## Alternative: One-Command Install Script
-
-If you prefer a fully automated approach, add this to your README:
-
-### Quick Install (Automated)
-
+### Step 1: Check Marketplace
 ```bash
-curl -fsSL https://raw.githubusercontent.com/brainly-io/pm-os/main/install.sh | bash
+# Claude checks if marketplace exists
+claude plugin marketplace list
+
+# If not found, adds it
+claude plugin marketplace add brainly-io/pm-os
 ```
 
-This script will:
-- Add the marketplace
-- Prompt you for installation options
-- Install your selected plugins
-- Show next steps
+### Step 2: Present Options
+Claude asks you:
+> "Which installation would you like?
+> 
+> A) Install everything (Recommended)
+> B) PM Brain only
+> C) Let me choose specific plugins"
 
-## Which Approach?
+### Step 3: Install Based on Your Choice
 
-**Interactive prompt (above):**
-- ✅ User has control at each step
-- ✅ Claude explains everything
-- ✅ Educational
-- ❌ Requires copy-paste
+**If you choose A (Everything):**
+```bash
+claude plugin install pm-all@pm-os
+```
 
-**Automated script:**
-- ✅ One command
-- ✅ Faster
-- ❌ Less visibility into what's happening
-- ❌ Requires curl/bash access
+**If you choose B (Brain only):**
+```bash
+claude plugin install pm-brain@pm-os
+```
 
-Choose based on your audience and preference!
+**If you choose C (Custom):**
+Claude shows all plugins and you select which ones, then installs them one by one.
+
+### Step 4: Confirmation
+
+Claude tells you:
+- ✅ What got installed
+- 📋 Available commands (e.g., `/pm-brain`, `/discover`, `/write-prd`)
+- 📖 Next steps to initialize your brain
+
+### Step 5: Next Steps Guidance
+
+Claude guides you:
+1. Create a directory for your brain
+2. Open it in Claude Desktop
+3. Run `/pm-brain` to initialize
+4. Start using the commands
+
+---
+
+## Why This Approach?
+
+**Benefits:**
+- ✅ No manual terminal commands
+- ✅ Claude explains each step
+- ✅ Interactive - you choose what to install
+- ✅ Immediate help if something goes wrong
+- ✅ Educational - you understand what's happening
+
+**Traditional approach vs Interactive:**
+
+| Traditional | Interactive Prompt |
+|------------|-------------------|
+| Read docs | Paste one prompt |
+| Open terminal | Claude does it |
+| Run commands manually | Choose options in chat |
+| Check installation | Claude confirms |
+| Read next steps | Claude guides you |
+
+---
+
+## Add This to Your README
+
+You can add this section to your main README:
+
+```markdown
+## 🚀 Quick Install (Interactive)
+
+Paste this into Claude Desktop and let Claude handle the installation:
+
+[Link to full prompt above]
+
+Claude will:
+- Add the PM-OS marketplace
+- Ask what you want to install
+- Run the installation
+- Guide you through next steps
+```
+
+---
+
+## Troubleshooting
+
+**"Command not found: claude"**
+→ Install Claude Code CLI first: [Installation guide](https://docs.anthropic.com/claude/docs/cli-installation)
+
+**"Marketplace already exists"**
+→ No problem! Claude will skip that step and proceed to installation options.
+
+**"I want to change what I installed"**
+→ You can run the prompt again and choose different options. Installing new plugins doesn't remove existing ones.
+
+**"I don't see the /pm-brain command"**
+→ Make sure PM Brain plugin is installed: `claude plugin list`
+→ Reinstall if needed: `claude plugin install pm-brain@pm-os`
+
+---
+
+## For Advanced Users
+
+If you prefer full automation without interaction, use:
+
+```bash
+# Install everything
+curl -fsSL https://raw.githubusercontent.com/brainly-io/pm-os/main/install.sh | bash
+
+# Or manual CLI commands
+claude plugin marketplace add brainly-io/pm-os
+claude plugin install pm-all@pm-os
+```
+
+But the interactive prompt is recommended for first-time users!
